@@ -1,28 +1,53 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <link rel="stylesheet" href="style.css">
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" >
+
     <title>My Portfolio</title>
   </head>
   <body>
-    <div class="container">
-      <div class="left-container">
-        <div class="left-inner-contents">
-          <h3>PROJECTS</h3>
-          <h3></h3>
-        </div>
-      </div>
-      <div class="right-container">
-        <div class="right-inner-contents">
-          <h1>MY NAME IS <span>MUKTHAPURAM TARUN REDDY</span></h1>
-          <h2>I AM A <span>WEB DEVELOPER</span></h2>
-          <img src="img.png" class="MYimage" alt="profile Photo">
-          <h3>DESCRIPTION:</h3>
-          <p></p>
-        </div>
-
-      </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light  navbar-fixed-top">
+  <a class="navbar-brand" href="#">My Protfolio</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Introduction <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Education</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Certifications</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="Introduction container-fluid ">
+  <div class="row contentrow">
+    <div class="col-3">
+      <img src="img.png" alt="My photo" class=" myPhoto ">
     </div>
+    <div class="info col-9 grid-child">
+      <h1>Mukthapuram Tarun Reddy</h1>
+      <div id="parent">I am a Frontend Developer.<div id="border"></div></div>
+      <h5>Practicing making websites and trying to learn. Searching for a place to learn and share the information.</h5>
+
+    </div>
+  </div>
+
+</div>
+
   </body>
 </html>
