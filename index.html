@@ -2,28 +2,26 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" >
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <title>My Portfolio</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light  navbar-fixed-top">
+    <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
   <a class="navbar-brand" href="#">My Protfolio</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
+  <div class="collapse navbar-collapse" id="navbar">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Introduction <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#Introduction">Introduction <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Education</a>
+        <a class="nav-link" href="#Education">Education</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Projects</a>
+        <a class="nav-link" href="#Skills">Skills</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Certifications</a>
@@ -34,20 +32,72 @@
     </ul>
   </div>
 </nav>
-<div class="Introduction container-fluid ">
+
+
+<div class="Introduction container-fluid " id="Introduction">
   <div class="row contentrow">
-    <div class="col-3">
+    <div class="col-lg-3 col-xs-12">
       <img src="img.png" alt="My photo" class=" myPhoto ">
     </div>
-    <div class="info col-9 grid-child">
+    <div class="info col-lg-9 col-xs-12 grid-child">
       <h1>Mukthapuram Tarun Reddy</h1>
-      <div id="parent">I am a Frontend Developer.<div id="border"></div></div>
+      <div class="typing-anime">
+        <div class="Typing-animation"id="parent">I am a Frontend Developer.<div id="border"></div></div>
+      </div>
       <h5>Practicing making websites and trying to learn. Searching for a place to learn and share the information.</h5>
-
     </div>
   </div>
-
 </div>
+<div class="Education container-fluid" id="Education">
+  <h1>Education</h1>
+  <div class="row  education-row">
+    <div class="col-lg-4 col-xs-12 column-card ">
+      <div class="edu-card align-items-center">
+        <div class="inner-edu">
+          <h3>Bachelor of Technology</h3>
+          <h4>Lovely Professional University</h4>
+          <h5><b>Stream : </b>Computer Science and Engineering</h5>
+          <h5><b>Batch : </b>2017 - 2021</h5>
+          <h4>CGPA : 6.51</h4>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-xs-12 column-card">
+      <div class="edu-card align-items-center">
+        <div class="inner-edu">
+          <h3>Higher Secondary School</h3>
+          <h4>Sri Chaitanya College</h4>
+          <h5><b>Stream : </b>M.P.C(Maths Physics Chemistry)</h5>
+          <h5><b>Batch : </b>2015 - 2017</h5>
+          <h4>Percentage : 92.9%</h4>
+        </div>
 
+      </div>
+    </div>
+    <div class="col-lg-4 col-xs-12 column-card">
+      <div class="edu-card align-items-center">
+        <div class="inner-edu">
+          <h3>School of Secondary Education </h3>
+          <h4>Viswabharathi educational institution</h4>
+          <h5><b>Batch : </b>2014 - 2014</h5>
+          <h4>Percentage : 93%</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="skills" id="Skills">
+  <h1>Skills</h1>
+  <div class="skills-card">
+    <h3 class="skills-card-heading">PROGRAMMING LANGUAGES</h3>
+    <h5>Java</h5>
+    <h5>JAVASCRIPT</h5>
+    <h5>CPP</h5>
+    <h3 class="skills-card-heading tech-heading">TECHNOLOGIES</h3>
+    <h5>Frontend Development (HTML ,CSS, JAVASCRIPT)</h5>
+    <h5>DATABASE MANAGEMENT SYSTEM</h5>
+    <h5>ANDROID DEVELOPMENT</h5>
+  </div>
+</div>
   </body>
 </html>

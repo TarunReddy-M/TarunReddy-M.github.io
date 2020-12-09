@@ -1,14 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
 * {
   padding: 0;
-  margin: 0; }
-
-div .wrapper1 {
-  background-color: #bdc3c7;
-  height: 1000px; }
+  margin: 0;
+  scroll-behavior: smooth; }
 
 html body {
-  height: 1000px;
+  height: 3000px;
   background-color: #bdc3c7; }
 
 .myPhoto {
@@ -26,10 +23,62 @@ html body {
   padding-top: 50px;
   padding-bottom: 50px; }
 
+.info h1 {
+  color: #fff;
+  margin-bottom: 30px; }
+.info div {
+  margin-bottom: 20px; }
 .info h5 {
   color: #636e72; }
 .info h3 {
   color: #636e72; }
+
+.Education {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 30px;
+  background-color: #aaa69d; }
+  .Education h1 {
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 30px; }
+
+.edu-card {
+  border-radius: 10px;
+  background: #020C19;
+  padding: 15px 16px;
+  color: #fff;
+  height: 100%;
+  display: flex; }
+
+.column-card {
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+  margin-top: 10px; }
+  .column-card .inner-edu {
+    margin: auto; }
+    .column-card .inner-edu h3 {
+      text-align: center;
+      margin-bottom: 40px; }
+
+.skills {
+  background-color: #aaa69d; }
+  .skills h1 {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px; }
+  .skills .skills-card {
+    background-color: #020C19;
+    text-align: center;
+    color: #fff;
+    padding: 30px 30px; }
+    .skills .skills-card h3 {
+      text-shadow: 2px 5px #2C3A47;
+      font-size: 50px;
+      margin-bottom: 20px; }
+    .skills .skills-card .tech-heading {
+      margin-top: 40px;
+      margin-bottom: 20px; }
 
 #parent {
   white-space: nowrap;
@@ -46,6 +95,29 @@ html body {
   position: absolute;
   border-bottom: solid 3px rgba(0, 255, 0, 0.75);
   animation: animated-cursor 600ms steps(30, end) infinite; }
+
+
+  @media (max-width: 576px) {
+    .typing-anime{
+      display: none;
+    }
+    .info h1{
+      text-align: center;
+      margin-top: 40px
+    }
+    .info h5{
+      text-align: center;
+    }
+    .skills-card-heading{
+      font-size: 35px !important;
+    }
+    .skills-card h5{
+      font-size: 20px;
+    }
+    .navbar-brand{
+      align-self: center;
+    }
+  }
 
 @keyframes animated-text {
   0% {
