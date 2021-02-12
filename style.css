@@ -9,8 +9,8 @@ html body {
   background-color: #bdc3c7; }
 
 .myPhoto {
-  width: 200px;
-  height: 300px;
+  width: 250px;
+  height: 270px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -80,6 +80,80 @@ html body {
       margin-top: 40px;
       margin-bottom: 20px; }
 
+.projects_tab {
+  background-color: #aaa69d;
+  color: #fff; }
+  .projects_tab .project-title {
+    color: #000; }
+    .projects_tab .project-title h1 {
+      text-align: center;
+      padding-top: 50px;
+      padding-bottom: 50px; }
+  .projects_tab .projectscol {
+    margin: 15px auto;
+    background-color: #020C19;
+    border-radius: 10px;
+    text-align: center; }
+    .projects_tab .projectscol h3 {
+      margin-top: 30px; }
+    .projects_tab .projectscol p {
+      margin-top: 30px;
+      font-size: 20px; }
+
+.intern_tab {
+  background-color: #aaa69d;
+  color: #fff; }
+  .intern_tab .intern-title {
+    color: #000; }
+    .intern_tab .intern-title h1 {
+      text-align: center;
+      padding-top: 50px;
+      padding-bottom: 50px; }
+  .intern_tab .interncol {
+    margin: 15px auto;
+    background-color: #020C19;
+    border-radius: 10px;
+    text-align: center; }
+    .intern_tab .interncol h3 {
+      margin-top: 30px; }
+    .intern_tab .interncol p {
+      margin-top: 30px;
+      font-size: 20px; }
+
+.certificate_tab {
+  background-color: #aaa69d;
+  color: #fff; }
+  .certificate_tab .certificate-title {
+    color: #000; }
+    .certificate_tab .certificate-title h1 {
+      text-align: center;
+      padding-top: 50px;
+      padding-bottom: 50px; }
+  .certificate_tab .certificatecol {
+    margin: 15px auto;
+    background-color: #020C19;
+    border-radius: 10px;
+    text-align: center; }
+    .certificate_tab .certificatecol h3 {
+      margin-top: 30px; }
+    .certificate_tab .certificatecol p {
+      margin-top: 30px;
+      font-size: 20px; }
+    .certificate_tab .certificatecol .CertificateLink {
+      text-decoration: none;
+      display: block;
+      height: 50px;
+      line-height: 50px;
+      width: 200px;
+      margin-left: auto;
+      margin-right: auto;
+      border: 2px solid #fff;
+      color: #fff; }
+    .certificate_tab .certificatecol .Amarginbot {
+      margin-bottom: 20px; }
+    .certificate_tab .certificatecol .Amargintop {
+      margin-top: 60px; }
+
 #parent {
   white-space: nowrap;
   overflow: hidden;
@@ -95,7 +169,6 @@ html body {
   position: absolute;
   border-bottom: solid 3px rgba(0, 255, 0, 0.75);
   animation: animated-cursor 600ms steps(30, end) infinite; }
-
 
   @media (max-width: 576px) {
     .typing-anime{
