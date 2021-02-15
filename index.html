@@ -8,6 +8,8 @@
     <title>My Portfolio</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+    <script src="script.js"></script>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
@@ -44,13 +46,19 @@
       <div class="typing-anime">
         <div class="Typing-animation"id="parent">I am a Frontend Developer.<div id="border"></div></div>
       </div>
-      <h5>Practicing making websites and trying to learn. Searching for a place to learn and share the information.</h5>
+      <h5>Practicing making websites and trying to learn. Searching for a workplace to learn and share the information.</h5>
     </div>
   </div>
 </div>
-<div class="Education container-fluid" id="Education">
-  <h1>Education</h1>
-  <div class="row  education-row">
+
+
+
+<div class="Education container-fluid" id="Education" onClick="clickedu()">
+  <div class="education-button" >
+    <h1 id="edu-title">Education</h1>
+  </div>
+
+  <div class="row  education-row disNone" id="education-row">
     <div class="col-lg-4 col-xs-12 column-card ">
       <div class="edu-card align-items-center">
         <div class="inner-edu">
@@ -58,7 +66,7 @@
           <h4>Lovely Professional University</h4>
           <h5><b>Stream : </b>Computer Science and Engineering</h5>
           <h5><b>Batch : </b>2017 - 2021</h5>
-          <h4>CGPA : 6.51</h4>
+          <h4>CGPA : 6.63</h4>
         </div>
       </div>
     </div>
@@ -86,17 +94,24 @@
     </div>
   </div>
 </div>
-<div class="skills" id="Skills">
-  <h1>Skills</h1>
-  <div class="skills-card">
-    <h3 class="skills-card-heading">PROGRAMMING LANGUAGES</h3>
-    <h5>Java</h5>
-    <h5>JAVASCRIPT</h5>
-    <h5>CPP</h5>
-    <h3 class="skills-card-heading tech-heading">TECHNOLOGIES</h3>
-    <h5>Frontend Development (HTML ,CSS, JAVASCRIPT)</h5>
-    <h5>DATABASE MANAGEMENT SYSTEM</h5>
-    <h5>ANDROID DEVELOPMENT</h5>
+
+
+<div class="skills" id="skills" onClick="clickSkill()">
+  <div class="skill-button" >
+    <h1>Skills</h1>
+  </div>
+  <div class="skills-card" id="skills-card">
+    <div class="skill-container">
+      <h3 class="skills-card-heading">PROGRAMMING LANGUAGES</h3>
+      <h5>Java</h5>
+      <h5>JAVASCRIPT</h5>
+      <h5>CPP</h5>
+      <h3 class="skills-card-heading tech-heading">TECHNOLOGIES</h3>
+      <h5>Frontend Development (HTML ,CSS, JAVASCRIPT)</h5>
+      <h5>DATABASE MANAGEMENT SYSTEM</h5>
+      <h5>ANDROID DEVELOPMENT</h5>
+    </div>
+
   </div>
 </div>
 <div class="projects_tab container-fluid">
@@ -104,7 +119,7 @@
     <h1>Projects</h1>
   </div>
   <div class="row centrediv">
-    
+
     <div class="col-lg-5 col-xs-12 projectscol">
       <h3>Delivery Managment System (HTML, CSS)</h3>
       <p>This Project provides a very good interface for customers and provides deliveryservices. At my early stages of front-end development, I designed this websiteusing HTML, CSS, JavaScript.</p>
@@ -123,7 +138,7 @@
       <h1>Internships</h1>
     </div>
     <div class="row centrediv">
-      
+
       <div class="col interncol">
         <h3>Machine Learning and Artificial Intelligence by ExpertsHub</h3>
         <p>It is a team-based internship where the organization train about machine learningand make a project based on it. I participated in a project which can perform Textsummarization. It will reduce the number of lines in a given input Paragraph.</p>
@@ -136,7 +151,7 @@
         <h1>Projects</h1>
       </div>
       <div class="row centrediv">
-        
+
         <div class="col-lg-5 col-xs-12 certificatecol">
           <h3>Automation Anywhere University Essential Level Prep Courses</h3>
           <p>Automation Anywhere provides tools to develop robotic processautomation software, which I worked to program bots to complete tasks.</p>
@@ -150,6 +165,24 @@
         </div>
       </div>
       </div>
+      <div class="Footer-main">
+          <div class="footerContainer">
+              <div class="ContactMe">
+                <div class="ContactLinks">
+                <p class="linkedinP"><span><img src="https://img.icons8.com/android/50/000000/linkedin.png"/><span><a href="https://www.linkedin.com/in/tarun-reddy-m">LinkedIn</a></p>
+                  <p class="gmailP"><span><img src="https://img.icons8.com/fluent/48/000000/gmail--v2.png"/><span><a href="https://mail.google.com/mail/?view=cm&fs=1&to=tarunreddymukthapuram@gmail.com">tarunreddymukthapuram@gmail.com</a></p>
 
+          </div>
+        </div>
+        <div class="">
+
+        </div>
+          </div>
+      </div>
+      <script>
+      ScrollReveal().reveal('.Introduction',{delay:200})
+      ScrollReveal().reveal('.Education', { delay: 500 })
+      ScrollReveal().reveal('.skills', { delay: 600 })
+      </script>
   </body>
 </html>

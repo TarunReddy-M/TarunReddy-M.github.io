@@ -5,7 +5,6 @@
   scroll-behavior: smooth; }
 
 html body {
-  height: 3000px;
   background-color: #bdc3c7; }
 
 .myPhoto {
@@ -13,15 +12,21 @@ html body {
   height: 270px;
   display: block;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: 70px;
   border-radius: 25px 0 25px 0; }
 
 .Introduction {
-  background-color: #000; }
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .contentrow {
   padding-top: 50px;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  height: 650px;
+  display: flex;
+  align-items: center; }
 
 .info h1 {
   color: #fff;
@@ -34,14 +39,22 @@ html body {
   color: #636e72; }
 
 .Education {
+  display: flex;
   padding-left: 0;
   padding-right: 0;
   padding-top: 30px;
-  background-color: #aaa69d; }
-  .Education h1 {
-    text-align: center;
-    padding-bottom: 50px;
-    padding-top: 30px; }
+  background-color: #aaa69d;
+  height: 700px;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 5px solid #000; }
+  .Education .education-button {
+    display: flex; }
+    .Education .education-button h1 {
+      padding-bottom: 50px;
+      padding-top: 30px; }
+  .Education .education-row {
+    display: none; }
 
 .edu-card {
   border-radius: 10px;
@@ -62,8 +75,15 @@ html body {
       margin-bottom: 40px; }
 
 .skills {
-  background-color: #aaa69d; }
-  .skills h1 {
+  background-color: #aaa69d;
+  border-bottom: 5px solid #000;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .skills .skill-button {
+    display: flex;
     text-align: center;
     padding-top: 50px;
     padding-bottom: 50px; }
@@ -71,8 +91,12 @@ html body {
     background-color: #020C19;
     text-align: center;
     color: #fff;
-    padding: 30px 30px; }
-    .skills .skills-card h3 {
+    padding: 30px 30px;
+    display: none;
+    flex-direction: column;
+    width: 1300px;
+    border-radius: 20px; }
+    .skills .skills-card .skills-container h3 {
       text-shadow: 2px 5px #2C3A47;
       font-size: 50px;
       margin-bottom: 20px; }
@@ -154,6 +178,63 @@ html body {
     .certificate_tab .certificatecol .Amargintop {
       margin-top: 60px; }
 
+.Footer-main {
+  height: 300px;
+  background-color: #020C19;
+  padding: 30px 20px; }
+  .Footer-main .footerContainer {
+    background-color: #aaa69d;
+    padding: 10px 15px;
+    border-radius: 20px; }
+    .Footer-main .footerContainer .ContactMe {
+      width: 50%; }
+      .Footer-main .footerContainer .ContactMe .ContactLinks .linkedinP img {
+        margin-right: 20px; }
+      .Footer-main .footerContainer .ContactMe .ContactLinks .linkedinP a {
+        text-decoration: none;
+        font-size: 15px;
+        color: #000; }
+      .Footer-main .footerContainer .ContactMe .ContactLinks .gmailP img {
+        margin-right: 20px; }
+      .Footer-main .footerContainer .ContactMe .ContactLinks .gmailP a {
+        text-decoration: none;
+        font-size: 15px;
+        color: #000; }
+
+        @media (max-width: 576px) {
+                            .typing-anime{
+                              display: none;
+                            }
+                            .info h1{
+                              text-align: center;
+                              margin-top: 40px
+                            }
+                            .myPhoto{
+                              margin-right: auto;
+                            }
+                            .info h5{
+                              text-align: center;
+                            }
+                            .skills-card-heading{
+                              font-size: 35px !important;
+                            }
+                            .skills-card h5{
+                              font-size: 20px;
+                            }
+                            .navbar-brand{
+                              align-self: center;
+                            }
+                            .Education{
+                              height:auto;
+                            }
+                            .skills{
+                              height:auto;
+                            }
+                            .skills-card{
+                              width:auto !important;
+                            }
+                          }
+
 #parent {
   white-space: nowrap;
   overflow: hidden;
@@ -169,28 +250,6 @@ html body {
   position: absolute;
   border-bottom: solid 3px rgba(0, 255, 0, 0.75);
   animation: animated-cursor 600ms steps(30, end) infinite; }
-
-  @media (max-width: 576px) {
-    .typing-anime{
-      display: none;
-    }
-    .info h1{
-      text-align: center;
-      margin-top: 40px
-    }
-    .info h5{
-      text-align: center;
-    }
-    .skills-card-heading{
-      font-size: 35px !important;
-    }
-    .skills-card h5{
-      font-size: 20px;
-    }
-    .navbar-brand{
-      align-self: center;
-    }
-  }
 
 @keyframes animated-text {
   0% {
