@@ -5,7 +5,6 @@
   scroll-behavior: smooth
 
 html body
-  height: 3000px
   background-color: #bdc3c7
 .myPhoto
   width: 250px
@@ -14,11 +13,21 @@ html body
   margin-left: auto
   margin-right: 70px
   border-radius: 25px 0 25px 0
+  transition: all .5s
+  &:hover
+    transform: translate(20px,15px)
+    box-shadow: -20px -11px 3px -1px #ffffff91
 .Introduction
   background-color: #000
+  display: flex
+  justify-content: center
+  align-items: center
 .contentrow
   padding-top: 50px
   padding-bottom: 50px
+  height: 650px
+  display: flex
+  align-items: center
 .info
   h1
     color: #fff
@@ -31,14 +40,24 @@ html body
   h3
     color: #636e72
 .Education
+  display: flex
   padding-left: 0
   padding-right: 0
   padding-top: 30px
   background-color: #aaa69d
-  h1
-    text-align: center
-    padding-bottom: 50px
-    padding-top: 30px
+  height: 700px
+  align-items: center
+  justify-content: center
+  border-bottom: 5px solid #000
+  &:hover
+    background-color: #817d71
+  .education-button
+    display: flex
+    h1
+      padding-bottom: 50px
+      padding-top: 30px
+  .education-row
+    display: none
 .edu-card
   border-radius: 10px
   background: #020C19
@@ -57,7 +76,17 @@ html body
       margin-bottom: 40px
 .skills
   background-color: #aaa69d
-  h1
+  border-bottom: 5px solid #000
+  height: 700px
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  &:hover
+    background-color: #817d71
+  .skill-button
+    display: flex
+    h1
     text-align: center
     padding-top: 50px
     padding-bottom: 50px
@@ -66,10 +95,15 @@ html body
     text-align: center
     color: #fff
     padding: 30px 30px
-    h3
-      text-shadow: 2px 5px #2C3A47
-      font-size: 50px
-      margin-bottom: 20px
+    display: none
+    flex-direction: column
+    width: 1300px
+    border-radius: 20px
+    .skills-container
+      h3
+        text-shadow: 2px 5px #2C3A47
+        font-size: 50px
+        margin-bottom: 20px
     .tech-heading
       margin-top: 40px
       margin-bottom: 20px
@@ -77,12 +111,23 @@ html body
 .projects_tab
   background-color: #aaa69d
   color: #fff
+  height: 700px
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  border-bottom: 5px solid #000
+  &:hover
+    background-color: #817d71
   .project-title
+    display: flex
     color: #000
     h1
       text-align: center
       padding-top: 50px
       padding-bottom: 50px
+  .projects_hider
+    display: none
   .projectscol
     margin: 15px auto
     background-color: #020C19
@@ -97,14 +142,24 @@ html body
 .intern_tab
   background-color: #aaa69d
   color: #fff
+  height: 700px 
+  border-bottom: 5px solid #000
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  &:hover
+    background-color: #817d71
   .intern-title
     color: #000
     h1
       text-align: center
       padding-top: 50px
       padding-bottom: 50px
+  .Intern_hider
+    display: none
   .interncol
-    margin: 15px auto
+    margin: 30px auto
     background-color: #020C19
     border-radius: 10px
     text-align: center
@@ -117,12 +172,21 @@ html body
 .certificate_tab
   background-color: #aaa69d
   color: #fff
+  height: 700px
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  &:hover
+    background-color: #817d71
   .certificate-title
     color: #000
     h1
       text-align: center
       padding-top: 50px
       padding-bottom: 50px
+  .certi_hider
+    display: none
   .certificatecol
     margin: 15px auto
     background-color: #020C19
@@ -147,6 +211,35 @@ html body
       margin-bottom: 20px
     .Amargintop
       margin-top: 60px
+.Footer-main
+  height: auto
+  background-color: #020C19
+  padding: 30px 20px
+  .footerContainer
+    background-color: #aaa69d
+    padding: 10px 15px
+    border-radius: 20px
+    .ContactMe
+      padding: 20px 50px
+      .ContactLinks
+        display: flex
+        justify-content: space-around
+        .linkedinL
+          display: flex
+          img
+            height: 70px
+            width: 70px
+            transition: transform .5s
+            &:hover
+              transform: scale(1.5)
+        .gmailL
+          display: flex
+          img
+            height: 70px
+            width: 70px
+            transition: transform .5s
+            &:hover
+              transform: scale(1.7)
 #parent
   white-space: nowrap
   overflow: hidden

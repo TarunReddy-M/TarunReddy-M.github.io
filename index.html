@@ -13,7 +13,7 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
-  <a class="navbar-brand" href="#">My Protfolio</a>
+  <a class="navbar-brand" href="#">My Portfolio</a>
   <div class="collapse navbar-collapse" id="navbar">
     <ul class="navbar-nav">
       <li class="nav-item active">
@@ -23,14 +23,20 @@
         <a class="nav-link" href="#Education">Education</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#Skills">Skills</a>
+        <a class="nav-link" href="#skills">Skills</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Certifications</a>
+        <a class="nav-link" href="#projects_tab">Projects</a>
       </li>
       <li class="nav-item">
+        <a class="nav-link" href="#intern_tab">Internships</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#certificate_tab">Certifications</a>
+      </li>
+      <!--<li class="nav-item">
         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-      </li>
+      </li>-->
     </ul>
   </div>
 </nav>
@@ -46,7 +52,7 @@
       <div class="typing-anime">
         <div class="Typing-animation"id="parent">I am a Frontend Developer.<div id="border"></div></div>
       </div>
-      <h5>Practicing making websites and trying to learn. Searching for a workplace to learn and share the information.</h5>
+      <h5>Practicing designing websites and trying to learn. Searching for a workplace to learn and share the information.</h5>
     </div>
   </div>
 </div>
@@ -57,7 +63,6 @@
   <div class="education-button" >
     <h1 id="edu-title">Education</h1>
   </div>
-
   <div class="row  education-row disNone" id="education-row">
     <div class="col-lg-4 col-xs-12 column-card ">
       <div class="edu-card align-items-center">
@@ -111,14 +116,13 @@
       <h5>DATABASE MANAGEMENT SYSTEM</h5>
       <h5>ANDROID DEVELOPMENT</h5>
     </div>
-
   </div>
 </div>
-<div class="projects_tab container-fluid">
+<div class="projects_tab container-fluid" id="projects_tab" onClick="clickProject()">
   <div class="project-title">
     <h1>Projects</h1>
   </div>
-  <div class="row centrediv">
+  <div class="row centrediv projects_hider" id="projects_hider">
 
     <div class="col-lg-5 col-xs-12 projectscol">
       <h3>Delivery Managment System (HTML, CSS)</h3>
@@ -133,11 +137,11 @@
   </div>
 
 
-  <div class="intern_tab container-fluid">
+  <div class="intern_tab container-fluid" id="intern_tab" onclick="clickIntern()">
     <div class="intern-title">
       <h1>Internships</h1>
     </div>
-    <div class="row centrediv">
+    <div class="row centrediv Intern_hider" id="Intern_hider">
 
       <div class="col interncol">
         <h3>Machine Learning and Artificial Intelligence by ExpertsHub</h3>
@@ -146,11 +150,11 @@
     </div>
     </div>
 
-    <div class="certificate_tab container-fluid">
+    <div class="certificate_tab container-fluid" id="certificate_tab" onclick="clickCertficate()">
       <div class="certificate-title">
-        <h1>Projects</h1>
+        <h1>Certificates</h1>
       </div>
-      <div class="row centrediv">
+      <div class="row centrediv certi_hider" id="certi_hider">
 
         <div class="col-lg-5 col-xs-12 certificatecol">
           <h3>Automation Anywhere University Essential Level Prep Courses</h3>
@@ -169,9 +173,13 @@
           <div class="footerContainer">
               <div class="ContactMe">
                 <div class="ContactLinks">
-                <p class="linkedinP"><span><img src="https://img.icons8.com/android/50/000000/linkedin.png"/><span><a href="https://www.linkedin.com/in/tarun-reddy-m">LinkedIn</a></p>
-                  <p class="gmailP"><span><img src="https://img.icons8.com/fluent/48/000000/gmail--v2.png"/><span><a href="https://mail.google.com/mail/?view=cm&fs=1&to=tarunreddymukthapuram@gmail.com">tarunreddymukthapuram@gmail.com</a></p>
-
+                  <a href="https://www.linkedin.com/in/tarun-reddy-m">
+                    <div class="linkedinL"><img src="https://img.icons8.com/android/50/000000/linkedin.png"/></div>
+                  </a>
+                  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tarunreddymukthapuram@gmail.com">
+                    <div class="gmailL"><img src="https://img.icons8.com/fluent/48/000000/gmail--v2.png"/></div>
+                  </a>
+  
           </div>
         </div>
         <div class="">
@@ -183,6 +191,9 @@
       ScrollReveal().reveal('.Introduction',{delay:200})
       ScrollReveal().reveal('.Education', { delay: 500 })
       ScrollReveal().reveal('.skills', { delay: 600 })
+      ScrollReveal().reveal('.projects_tab',{delay:200})
+      ScrollReveal().reveal('.intern_tab', { delay: 500 })
+      ScrollReveal().reveal('.certificate_tab', { delay: 600 })
       </script>
   </body>
 </html>

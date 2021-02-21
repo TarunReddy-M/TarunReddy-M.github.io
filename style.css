@@ -13,7 +13,11 @@ html body {
   display: block;
   margin-left: auto;
   margin-right: 70px;
-  border-radius: 25px 0 25px 0; }
+  border-radius: 25px 0 25px 0;
+  transition: all 0.5s; }
+  .myPhoto:hover {
+    transform: translate(20px, 15px);
+    box-shadow: -20px -11px 3px -1px #ffffff91; }
 
 .Introduction {
   background-color: #000;
@@ -48,6 +52,8 @@ html body {
   align-items: center;
   justify-content: center;
   border-bottom: 5px solid #000; }
+  .Education:hover {
+    background-color: #817d71; }
   .Education .education-button {
     display: flex; }
     .Education .education-button h1 {
@@ -82,6 +88,8 @@ html body {
   justify-content: center;
   align-items: center;
   flex-direction: column; }
+  .skills:hover {
+    background-color: #817d71; }
   .skills .skill-button {
     display: flex;
     text-align: center;
@@ -106,13 +114,24 @@ html body {
 
 .projects_tab {
   background-color: #aaa69d;
-  color: #fff; }
+  color: #fff;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-bottom: 5px solid #000; }
+  .projects_tab:hover {
+    background-color: #817d71; }
   .projects_tab .project-title {
+    display: flex;
     color: #000; }
     .projects_tab .project-title h1 {
       text-align: center;
       padding-top: 50px;
       padding-bottom: 50px; }
+  .projects_tab .projects_hider {
+    display: none; }
   .projects_tab .projectscol {
     margin: 15px auto;
     background-color: #020C19;
@@ -126,15 +145,25 @@ html body {
 
 .intern_tab {
   background-color: #aaa69d;
-  color: #fff; }
+  color: #fff;
+  height: 700px;
+  border-bottom: 5px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .intern_tab:hover {
+    background-color: #817d71; }
   .intern_tab .intern-title {
     color: #000; }
     .intern_tab .intern-title h1 {
       text-align: center;
       padding-top: 50px;
       padding-bottom: 50px; }
+  .intern_tab .Intern_hider {
+    display: none; }
   .intern_tab .interncol {
-    margin: 15px auto;
+    margin: 30px auto;
     background-color: #020C19;
     border-radius: 10px;
     text-align: center; }
@@ -146,13 +175,22 @@ html body {
 
 .certificate_tab {
   background-color: #aaa69d;
-  color: #fff; }
+  color: #fff;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .certificate_tab:hover {
+    background-color: #817d71; }
   .certificate_tab .certificate-title {
     color: #000; }
     .certificate_tab .certificate-title h1 {
       text-align: center;
       padding-top: 50px;
       padding-bottom: 50px; }
+  .certificate_tab .certi_hider {
+    display: none; }
   .certificate_tab .certificatecol {
     margin: 15px auto;
     background-color: #020C19;
@@ -179,7 +217,7 @@ html body {
       margin-top: 60px; }
 
 .Footer-main {
-  height: 300px;
+  height: auto;
   background-color: #020C19;
   padding: 30px 20px; }
   .Footer-main .footerContainer {
@@ -187,53 +225,76 @@ html body {
     padding: 10px 15px;
     border-radius: 20px; }
     .Footer-main .footerContainer .ContactMe {
-      width: 50%; }
-      .Footer-main .footerContainer .ContactMe .ContactLinks .linkedinP img {
-        margin-right: 20px; }
-      .Footer-main .footerContainer .ContactMe .ContactLinks .linkedinP a {
-        text-decoration: none;
-        font-size: 15px;
-        color: #000; }
-      .Footer-main .footerContainer .ContactMe .ContactLinks .gmailP img {
-        margin-right: 20px; }
-      .Footer-main .footerContainer .ContactMe .ContactLinks .gmailP a {
-        text-decoration: none;
-        font-size: 15px;
-        color: #000; }
-
-        @media (max-width: 576px) {
-                            .typing-anime{
-                              display: none;
-                            }
-                            .info h1{
-                              text-align: center;
-                              margin-top: 40px
-                            }
-                            .myPhoto{
-                              margin-right: auto;
-                            }
-                            .info h5{
-                              text-align: center;
-                            }
-                            .skills-card-heading{
-                              font-size: 35px !important;
-                            }
-                            .skills-card h5{
-                              font-size: 20px;
-                            }
-                            .navbar-brand{
-                              align-self: center;
-                            }
-                            .Education{
-                              height:auto;
-                            }
-                            .skills{
-                              height:auto;
-                            }
-                            .skills-card{
-                              width:auto !important;
-                            }
-                          }
+      padding: 20px 50px; }
+      .Footer-main .footerContainer .ContactMe .ContactLinks {
+        display: flex;
+        justify-content: space-around; }
+        .Footer-main .footerContainer .ContactMe .ContactLinks .linkedinL {
+          display: flex; }
+          .Footer-main .footerContainer .ContactMe .ContactLinks .linkedinL img {
+            height: 70px;
+            width: 70px;
+            transition: transform 0.5s; }
+            .Footer-main .footerContainer .ContactMe .ContactLinks .linkedinL img:hover {
+              transform: scale(1.5); }
+        .Footer-main .footerContainer .ContactMe .ContactLinks .gmailL {
+          display: flex; }
+          .Footer-main .footerContainer .ContactMe .ContactLinks .gmailL img {
+            height: 70px;
+            width: 70px;
+            transition: transform 0.5s; }
+            .Footer-main .footerContainer .ContactMe .ContactLinks .gmailL img:hover {
+              transform: scale(1.7); }
+              @media (max-width: 576px) {
+                .typing-anime{
+                  display: none;
+                }
+                .info h1{
+                  text-align: center;
+                  margin-top: 40px
+                }
+                .myPhoto{
+                  margin-right: auto;
+                }
+                .info h5{
+                  text-align: center;
+                }
+                .skills-card-heading{
+                  font-size: 35px !important;
+                }
+                .skills-card h5{
+                  font-size: 20px;
+                }
+                .navbar-brand{
+                  align-self: center;
+                }
+                .Education{
+                  height:auto;
+                }
+                .skills{
+                  height:auto;
+                }
+                .skills-card{
+                  width:auto !important;
+                }
+                .projects_tab{
+                  height: auto;
+                }
+                .intern_tab{
+                  height: auto;
+                }
+                .certificate_tab{
+                  height: auto;
+                }
+              }
+      @media (min-width: 576px) and (max-width: 966px){
+          .myPhoto{
+              margin-right: auto;
+          }
+          .skills-card{
+            width:auto !important;
+          }
+      }
 
 #parent {
   white-space: nowrap;

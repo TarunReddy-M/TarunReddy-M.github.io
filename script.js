@@ -62,3 +62,48 @@ function clickSkill(){
   }
 
 }
+
+function clickProject(){
+  const mediaQuery = window.matchMedia('(max-width: 576px)');
+
+  const element = document.querySelector('.projects_hider');
+  const style = getComputedStyle(element);
+  const value = style.display;
+
+  if(value == "none"){
+    document.getElementById('projects_hider').style.display="flex";
+  }
+  else if (value == "flex") {
+    document.getElementById('projects_hider').style.display="none";
+  }
+}
+
+function clickIntern(){
+  const mediaQuery = window.matchMedia('(max-width: 576px)');
+
+  const element = document.querySelector('.Intern_hider');
+  const style = getComputedStyle(element);
+  const value = style.display;
+
+  if(value == "none"){
+    document.getElementById('Intern_hider').style.display="flex";
+  }
+  else if (value == "flex") {
+    document.getElementById('Intern_hider').style.display="none";
+  }
+}
+
+function clickCertficate(){
+  const mediaQuery = window.matchMedia('(max-width: 576px)');
+
+  const element = document.querySelector('.certi_hider');
+  const style = getComputedStyle(element);
+  const value = style.display;
+
+  if(value == "none"){
+    document.getElementById('certi_hider').style.display="flex";
+  }
+  else if (value == "flex") {
+    document.getElementById('certi_hider').style.display="none";
+  }
+}
