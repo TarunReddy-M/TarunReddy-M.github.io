@@ -9,7 +9,6 @@ html body {
 
 .myPhoto {
   width: 250px;
-  height: 270px;
   display: block;
   margin-left: auto;
   margin-right: 70px;
@@ -246,6 +245,9 @@ html body {
             .Footer-main .footerContainer .ContactMe .ContactLinks .gmailL img:hover {
               transform: scale(1.7); }
               @media (max-width: 576px) {
+                .contentrow{
+                  height: auto;
+                }
                 .typing-anime{
                   display: none;
                 }
@@ -255,6 +257,7 @@ html body {
                 }
                 .myPhoto{
                   margin-right: auto;
+                  width: 300px;
                 }
                 .info h5{
                   text-align: center;

@@ -1,50 +1,54 @@
 @media (max-width: 576px) {
-          .typing-anime{
-            display: none;
-          }
-          .info h1{
-            text-align: center;
-            margin-top: 40px
-          }
+                .contentrow{
+                  height: auto;
+                }
+                .typing-anime{
+                  display: none;
+                }
+                .info h1{
+                  text-align: center;
+                  margin-top: 40px
+                }
+                .myPhoto{
+                  margin-right: auto;
+                  width: 300px;
+                }
+                .info h5{
+                  text-align: center;
+                }
+                .skills-card-heading{
+                  font-size: 35px !important;
+                }
+                .skills-card h5{
+                  font-size: 20px;
+                }
+                .navbar-brand{
+                  align-self: center;
+                }
+                .Education{
+                  height:auto;
+                }
+                .skills{
+                  height:auto;
+                }
+                .skills-card{
+                  width:auto !important;
+                }
+                .projects_tab{
+                  height: auto;
+                }
+                .intern_tab{
+                  height: auto;
+                }
+                .certificate_tab{
+                  height: auto;
+                }
+              }
+      @media (min-width: 576px) and (max-width: 966px){
           .myPhoto{
-            margin-right: auto;
-          }
-          .info h5{
-            text-align: center;
-          }
-          .skills-card-heading{
-            font-size: 35px !important;
-          }
-          .skills-card h5{
-            font-size: 20px;
-          }
-          .navbar-brand{
-            align-self: center;
-          }
-          .Education{
-            height:auto;
-          }
-          .skills{
-            height:auto;
+              margin-right: auto;
           }
           .skills-card{
             width:auto !important;
           }
-          .projects_tab{
-            height: auto;
-          }
-          .intern_tab{
-            height: auto;
-          }
-          .certificate_tab{
-            height: auto;
-          }
-        }
-@media (min-width: 576px) and (max-width: 966px){
-    .myPhoto{
-        margin-right: auto;
-    }
-    .skills-card{
-      width:auto !important;
-    }
-}
+      }
