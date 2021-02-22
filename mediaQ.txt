@@ -49,6 +49,11 @@
               margin-right: auto;
           }
           .skills-card{
-            width:auto !important;
+            width: auto !important;
+          }
+          .contentrow{
+            height: auto;
           }
       }
+
+      

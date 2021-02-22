@@ -50,16 +50,21 @@ html body {
   height: 700px;
   align-items: center;
   justify-content: center;
-  border-bottom: 5px solid #000; }
+  border-bottom: 5px solid #000;
+  transition: background 0.5s ease-in; }
   .Education:hover {
-    background-color: #817d71; }
+    background: #AAA69D;
+    background: linear-gradient(to left, #AAA69D, #5F5844); }
   .Education .education-button {
     display: flex; }
     .Education .education-button h1 {
       padding-bottom: 50px;
       padding-top: 30px; }
   .Education .education-row {
-    display: none; }
+    display: none;
+    transition: transform 0.4s; }
+    .Education .education-row:hover {
+      transform: scale(0.95); }
 
 .edu-card {
   border-radius: 10px;
@@ -86,9 +91,11 @@ html body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; }
+  flex-direction: column;
+  transition: background 0.5s ease-in; }
   .skills:hover {
-    background-color: #817d71; }
+    background: #AAA69D;
+    background: linear-gradient(to right, #AAA69D, #5F5844); }
   .skills .skill-button {
     display: flex;
     text-align: center;
@@ -102,7 +109,10 @@ html body {
     display: none;
     flex-direction: column;
     width: 1300px;
-    border-radius: 20px; }
+    border-radius: 20px;
+    transition: transform 0.4s; }
+    .skills .skills-card:hover {
+      transform: scale(0.95); }
     .skills .skills-card .skills-container h3 {
       text-shadow: 2px 5px #2C3A47;
       font-size: 50px;
@@ -119,9 +129,11 @@ html body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border-bottom: 5px solid #000; }
+  border-bottom: 5px solid #000;
+  transition: background 0.5s ease-in; }
   .projects_tab:hover {
-    background-color: #817d71; }
+    background: #AAA69D;
+    background: linear-gradient(to left, #AAA69D, #5F5844); }
   .projects_tab .project-title {
     display: flex;
     color: #000; }
@@ -130,7 +142,10 @@ html body {
       padding-top: 50px;
       padding-bottom: 50px; }
   .projects_tab .projects_hider {
-    display: none; }
+    display: none;
+    transition: transform 0.4s; }
+    .projects_tab .projects_hider:hover {
+      transform: scale(0.95); }
   .projects_tab .projectscol {
     margin: 15px auto;
     background-color: #020C19;
@@ -150,9 +165,11 @@ html body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; }
+  flex-direction: column;
+  transition: background 0.5s ease-in; }
   .intern_tab:hover {
-    background-color: #817d71; }
+    background: #AAA69D;
+    background: linear-gradient(to right, #AAA69D, #5F5844); }
   .intern_tab .intern-title {
     color: #000; }
     .intern_tab .intern-title h1 {
@@ -160,7 +177,10 @@ html body {
       padding-top: 50px;
       padding-bottom: 50px; }
   .intern_tab .Intern_hider {
-    display: none; }
+    display: none;
+    transition: transform 0.4s; }
+    .intern_tab .Intern_hider:hover {
+      transform: scale(0.95); }
   .intern_tab .interncol {
     margin: 30px auto;
     background-color: #020C19;
@@ -179,9 +199,11 @@ html body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; }
+  flex-direction: column;
+  transition: background 0.5s ease-in; }
   .certificate_tab:hover {
-    background-color: #817d71; }
+    background: #AAA69D;
+    background: linear-gradient(to left, #AAA69D, #5F5844); }
   .certificate_tab .certificate-title {
     color: #000; }
     .certificate_tab .certificate-title h1 {
@@ -189,7 +211,10 @@ html body {
       padding-top: 50px;
       padding-bottom: 50px; }
   .certificate_tab .certi_hider {
-    display: none; }
+    display: none;
+    transition: transform 0.4s; }
+    .certificate_tab .certi_hider:hover {
+      transform: scale(0.95); }
   .certificate_tab .certificatecol {
     margin: 15px auto;
     background-color: #020C19;
@@ -295,9 +320,14 @@ html body {
               margin-right: auto;
           }
           .skills-card{
-            width:auto !important;
+            width: auto !important;
+          }
+          .contentrow{
+            height: auto;
           }
       }
+
+      
 
 #parent {
   white-space: nowrap;

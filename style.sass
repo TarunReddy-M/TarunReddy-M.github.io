@@ -8,7 +8,6 @@ html body
   background-color: #bdc3c7
 .myPhoto
   width: 250px
-  height: 270px
   display: block
   margin-left: auto
   margin-right: 70px
@@ -49,8 +48,10 @@ html body
   align-items: center
   justify-content: center
   border-bottom: 5px solid #000
+  transition: background .5s ease-in
   &:hover
-    background-color: #817d71
+    background: #AAA69D
+    background: linear-gradient(to left, #AAA69D, #5F5844)
   .education-button
     display: flex
     h1
@@ -58,6 +59,9 @@ html body
       padding-top: 30px
   .education-row
     display: none
+    transition: transform .4s
+    &:hover
+      transform: scale(0.95)
 .edu-card
   border-radius: 10px
   background: #020C19
@@ -82,8 +86,10 @@ html body
   justify-content: center
   align-items: center
   flex-direction: column
+  transition: background .5s ease-in
   &:hover
-    background-color: #817d71
+    background: #AAA69D
+    background: linear-gradient(to right, #AAA69D, #5F5844)
   .skill-button
     display: flex
     h1
@@ -99,6 +105,9 @@ html body
     flex-direction: column
     width: 1300px
     border-radius: 20px
+    transition: transform .4s
+    &:hover
+      transform: scale(0.95)
     .skills-container
       h3
         text-shadow: 2px 5px #2C3A47
@@ -117,8 +126,10 @@ html body
   align-items: center
   flex-direction: column
   border-bottom: 5px solid #000
+  transition: background .5s ease-in
   &:hover
-    background-color: #817d71
+    background: #AAA69D
+    background: linear-gradient(to left, #AAA69D, #5F5844)
   .project-title
     display: flex
     color: #000
@@ -128,6 +139,9 @@ html body
       padding-bottom: 50px
   .projects_hider
     display: none
+    transition: transform .4s
+    &:hover
+      transform: scale(0.95)
   .projectscol
     margin: 15px auto
     background-color: #020C19
@@ -148,8 +162,10 @@ html body
   justify-content: center
   align-items: center
   flex-direction: column
+  transition: background .5s ease-in
   &:hover
-    background-color: #817d71
+    background: #AAA69D
+    background: linear-gradient(to right, #AAA69D, #5F5844)
   .intern-title
     color: #000
     h1
@@ -158,6 +174,9 @@ html body
       padding-bottom: 50px
   .Intern_hider
     display: none
+    transition: transform .4s
+    &:hover
+      transform: scale(0.95)
   .interncol
     margin: 30px auto
     background-color: #020C19
@@ -177,8 +196,10 @@ html body
   justify-content: center
   align-items: center
   flex-direction: column
+  transition: background .5s ease-in
   &:hover
-    background-color: #817d71
+    background: #AAA69D
+    background: linear-gradient(to left, #AAA69D, #5F5844)
   .certificate-title
     color: #000
     h1
@@ -187,6 +208,9 @@ html body
       padding-bottom: 50px
   .certi_hider
     display: none
+    transition: transform .4s
+    &:hover
+      transform: scale(0.95)
   .certificatecol
     margin: 15px auto
     background-color: #020C19
